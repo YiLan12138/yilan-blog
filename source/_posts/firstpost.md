@@ -2,8 +2,14 @@
 title: 第一篇博客——博客网站搭建学习笔记
 date: 2024-03-30 15:48:02
 tags:
+- 笔记 
+- 工具
 category: work
+timeline: work
+toc: true
+abstract: markdown语法和博客网站搭建过程中遇到的一些困难和解决办法
 ---
+
 
 # Hi这是我的第一条博客
 ### ——首先当然是记录一下此次的博客网站搭建过程啦
@@ -86,6 +92,21 @@ $$
 
 >[参考视频1](https://www.bilibili.com/video/BV1aU421o7yv/?spm_id_from=333.880.my_history.page.click)
 [参考视频2](https://www.bilibili.com/video/BV1HP4y1P76Y/?spm_id_from=333.880.my_history.page.click&vd_source=f18e8748005694e44438cbc695c9bcc7)
+
+11. 文章摘要
+在 markdown 文件中使用 `<!--more-->` 可以截断文章，使得在这之前的内容可以作为 excerpt 显示在文章列表页。另外，也可以在Front-matter中设置 abstract 字段来设置隐藏式摘要。abstract 的设置不同于通过在正文使用 隔断的节录（excerpt）。abstract 的内容不会再出现在正文中，并且设置 abstrct 后会覆盖 excerpt 在文章列表的中的展示。
+
+```
+---
+title: 隐藏式摘要测试
+date: 2024-01-27 11:58:32
+tags: text
+category: featTest
+cover: assets/hozen-durdledoor.jpg
+abstract: "该文章测试隐藏式摘要功能，此文本只会在文章列表展示，文章正文中不再出现。"
+---
+```
+
 ---
 ### 第二章 博客搭建
 

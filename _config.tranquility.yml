@@ -125,18 +125,18 @@ timeline:
   enable: true
   order: false # 是否按时间正序展示，false 为倒序
   items:
-    - name: article
+    - name: work
       color: "#ee936c"
       icon: /images/icon/icon-article.svg
-      checked: false
-    - name: app
+      checked: ture
+    - name: life
       color: "#60a465"
       icon: /images/icon/icon-app.svg
       checked: true
-    - name: event
+    - name: myself
       color: "#568dc4"
       icon: /images/icon/icon-event.svg
-      checked: false
+      checked: ture
 
 # 标签云
 tagcloud:
@@ -151,8 +151,8 @@ mermaid:
     startOnload: true
 
 cv:
-  enable: true
-  showInNav: true
+  enable: false
+  showInNav: false
   iconPrefix: fas
   keywords: 简历,李白
   description: 李白的简历
