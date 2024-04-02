@@ -122,3 +122,10 @@ abstract: "该文章测试隐藏式摘要功能，此文本只会在文章列表
 - **博客的美化**
 
 感谢原博主分享的[致远主题](https://github.com/hooozen/hexo-theme-tranquility)
+
+- **Git 更新**
+```
+git add .
+git commit -m "Update"
+git push origin main
+```
