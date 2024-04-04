@@ -11,8 +11,8 @@ abstract: markdown语法和博客网站搭建过程中遇到的一些困难和�
 ---
 
 
-# Hi这是我的第一条博客
-### ——首先当然是记录一下此次的博客网站搭建过程啦
+# Hi这里是我的第一条博客
+**——第一条博客当然是先记录一下这次的博客网站搭建过程啦**
 
 ###  第一章 mardown语法
 
@@ -110,8 +110,28 @@ abstract: "该文章测试隐藏式摘要功能，此文本只会在文章列表
 ---
 ### 第二章 博客搭建
 
+
+
 博客网站的搭建是看的另一名博主的图文教程的，他的文章写的很完备
-所以博客网站搭建的详细内容请看[原文](https://blog.cuijiacai.com/blog-building/#post-comment)，这里我只讲一下我在博客搭建中的经验和问题
+所以博客网站搭建的详细内容请看[原文](https://blog.cuijiacai.com/blog-building/#post-comment)，这里我只讲一下我在博客搭建过程中遇到的问题和解决办法，以及一些个人经验
+
+- **原博客搭建教程的补充**
+
+原教程推荐windows系统用wsl或linux虚拟机，我在搞虚拟机时浪费不少时间，最终发现不用虚拟机和wsl也可以，windows系统搭建时只需要在官网下载安装nodejs和git，后续操作使用git bash，其他操作就和原教程一样了，而git bash中输出的日志可以用chatgpt进行解析和提供解决方案（gpt3.5就行）
+
+windows系统可以在想要安装hexo的位置右键 open git bash here在当前位置打开gitbash安装 hexo和后续插件
+
+github远程仓库建立（注册github花了我半小时，github的人机认证是真麻烦啊）
+
+在netlify网站上部署时build command要改成npm run netlify或npm run build，以及publish directory要改成public
+
+<img src="/images/firstpost/netlify.jpg" style="zoom:80%"> 
+
+netlify的HTTPS配置可能会慢一点，我等了一天才自动配置好
+
+其他步骤完全按照原文操作，最后发现在国内网络环境下可以打开netlify分配的域名（xxxx.netlify.app），而无法打开在阿里云购买的域名，解决方案是在Cloudflare网站侧栏中找到SSL/TLS—概览，然后将灵活改为完全。之后就可以在国内网络环境下打开两个网站了。（所以好像如果不在乎个性化的域名的话，不额外购买域名而直接使用netlify.app也可以）
+
+<img src="/images/firstpost/cloudflare.jpg" style="zoom:80%"> 
 
  - **ChatGPT帮了我大忙**
 
